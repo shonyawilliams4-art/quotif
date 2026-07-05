@@ -212,9 +212,9 @@
           words(node.textContent, "");
         } else if (node.nodeName === "BR") {
           frag.appendChild(node.cloneNode());
-        } else if (node.classList && node.classList.contains("gold")) {
+        } else if (node.classList && (node.classList.contains("gold") || node.classList.contains("blue"))) {
           // flatten gradient phrases into per-word gradient spans so text wraps naturally
-          words(node.textContent, "gold");
+          words(node.textContent, node.classList.contains("blue") ? "blue" : "gold");
         } else {
           const el = node.cloneNode(true);
           el.classList.add("w");

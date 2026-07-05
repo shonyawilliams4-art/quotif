@@ -1,0 +1,126 @@
+{
+ "total": 10000,
+ "note": "Original aphorisms by Quoti Live. Created By: iTechSmart Inc.",
+ "categories": [
+  {
+   "slug": "motivation",
+   "name": "Motivation",
+   "emoji": "🔥",
+   "count": 500
+  },
+  {
+   "slug": "success",
+   "name": "Success",
+   "emoji": "🏆",
+   "count": 500
+  },
+  {
+   "slug": "wisdom",
+   "name": "Wisdom",
+   "emoji": "🦉",
+   "count": 500
+  },
+  {
+   "slug": "leadership",
+   "name": "Leadership",
+   "emoji": "🧭",
+   "count": 500
+  },
+  {
+   "slug": "business",
+   "name": "Business",
+   "emoji": "💼",
+   "count": 500
+  },
+  {
+   "slug": "wealth",
+   "name": "Money & Wealth",
+   "emoji": "💰",
+   "count": 500
+  },
+  {
+   "slug": "discipline",
+   "name": "Discipline",
+   "emoji": "⚔️",
+   "count": 500
+  },
+  {
+   "slug": "courage",
+   "name": "Courage",
+   "emoji": "🦁",
+   "count": 500
+  },
+  {
+   "slug": "resilience",
+   "name": "Resilience",
+   "emoji": "🌊",
+   "count": 500
+  },
+  {
+   "slug": "growth",
+   "name": "Personal Growth",
+   "emoji": "🌱",
+   "count": 500
+  },
+  {
+   "slug": "happiness",
+   "name": "Happiness",
+   "emoji": "☀️",
+   "count": 500
+  },
+  {
+   "slug": "love",
+   "name": "Love",
+   "emoji": "❤️",
+   "count": 500
+  },
+  {
+   "slug": "friendship",
+   "name": "Friendship",
+   "emoji": "🤝",
+   "count": 500
+  },
+  {
+   "slug": "family",
+   "name": "Family",
+   "emoji": "🏡",
+   "count": 500
+  },
+  {
+   "slug": "health",
+   "name": "Health & Wellness",
+   "emoji": "💪",
+   "count": 500
+  },
+  {
+   "slug": "mindfulness",
+   "name": "Mindfulness & Peace",
+   "emoji": "🧘",
+   "count": 500
+  },
+  {
+   "slug": "creativity",
+   "name": "Creativity",
+   "emoji": "🎨",
+   "count": 500
+  },
+  {
+   "slug": "time",
+   "name": "Time & Priorities",
+   "emoji": "⏳",
+   "count": 500
+  },
+  {
+   "slug": "change",
+   "name": "Change & New Beginnings",
+   "emoji": "🦋",
+   "count": 500
+  },
+  {
+   "slug": "gratitude",
+   "name": "Gratitude",
+   "emoji": "🙏",
+   "count": 500
+  }
+ ]
+}

@@ -153,6 +153,32 @@ PAGES = {
             "offers": offer("Ascend Growth Program™ (includes Quoti AOS™)", "500", "MONTH"),
         }, breadcrumbs(("Home", "index.html"), ("Quoti AOS", "quoti-aos.html"))],
     },
+    "quoti-live.html": {
+        "title": "Quoti Live — 10,000 Free Inspirational Quotes, No Subscription | Quoti Consulting",
+        "desc": "Quoti Live: 10,000 original quotes across 20 balanced categories — motivation, success, business, love, discipline and more. Quote of the day, search, favorites, shareable image cards. Free forever; optional $1 or custom donation.",
+        "keywords": "free quotes, quote of the day, inspirational quotes free, motivational quotes no subscription, business quotes, daily wisdom, quote generator, Quoti Live, donation supported quotes",
+        "active": "LIVE",
+        "jsonld": [ORG, {
+            "@type": "WebApplication",
+            "name": "Quoti Live",
+            "url": BASE + "/quoti-live.html",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "Any (web)",
+            "description": "Free quote platform with 10,000 original quotes in 20 balanced categories: quote of the day, random quotes, full-text search, favorites and downloadable quote image cards. No subscription — supported by optional $1 or custom donations.",
+            "isAccessibleForFree": True,
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "Free forever. Optional donation from $1 or a custom amount.",
+            },
+            "publisher": {"@id": BASE + "/#organization"},
+        }, breadcrumbs(("Home", "index.html"), ("Quoti Live", "quoti-live.html")),
+           faq([
+               ("Is Quoti Live free?", "Yes — all 10,000 quotes, search, favorites, sharing and image downloads are free with no account or subscription. An optional donation of $1 or any custom amount supports the project."),
+               ("How many quotes does Quoti Live have?", "10,000 original quotes, perfectly balanced across 20 categories — exactly 500 quotes in each category, including motivation, success, wisdom, leadership, business, money, discipline, courage, resilience, growth, happiness, love, friendship, family, health, mindfulness, creativity, time, change and gratitude."),
+           ])],
+    },
     "resources.html": {
         "title": "Free Business Resources — Checklists, Guides & Templates | Quoti Consulting",
         "desc": "Free small-business tools: Business Startup Checklist, Business Health Assessment, Funding Readiness Checklist, Business Credit Guide, SOP Starter Guide, Tax Checklist and Monthly Business Review template.",
@@ -206,7 +232,7 @@ PAGES = {
     },
 }
 
-NAV_KEYS = ["HOME", "ABOUT", "SERVICES", "INDUSTRIES", "AOS", "RESOURCES", "BLOG", "PODCAST", "PORTAL", "CONTACT"]
+NAV_KEYS = ["HOME", "ABOUT", "SERVICES", "INDUSTRIES", "AOS", "LIVE", "RESOURCES", "BLOG", "PODCAST", "PORTAL", "CONTACT"]
 
 
 def build():

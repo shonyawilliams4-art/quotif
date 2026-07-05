@@ -1,0 +1,141 @@
+<!-- PAGE HERO -->
+<section class="hero hero-sub">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="orb orb-gold" style="width:380px;height:380px;top:-6%;right:8%"></div>
+  <img class="hero-mark-watermark" src="assets/img/logo-mark.svg" alt="" aria-hidden="true">
+  <div class="container">
+    <nav class="breadcrumbs reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><span>Quoti Live</span></nav>
+    <p class="eyebrow reveal">Free Forever · No Subscription · No Sign-Up</p>
+    <h1 class="reveal reveal-d1">Quoti Live.<br><span class="blue">10,000 sparks of wisdom.</span></h1>
+    <p class="lead reveal reveal-d2">A daily dose of original wisdom on business, courage, discipline, love and sixteen more walks of life. Every quote, every feature, free — kept alive by $1 donations from people it helped.</p>
+    <div class="hero-badges reveal reveal-d3">
+      <span class="chip"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> 10,000 original quotes</span>
+      <span class="chip"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg> 20 categories, 500 each</span>
+      <span class="chip"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 17 2.5 13.5 2.5 9.2 2.5 6.4 4.7 4.5 7.2 4.5c1.9 0 3.6 1 4.8 2.8 1.2-1.8 2.9-2.8 4.8-2.8 2.5 0 4.7 1.9 4.7 4.7 0 4.3-4.5 7.8-9.5 11.8z"/></svg> Donation-powered — from $1</span>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE OF THE DAY -->
+<section class="section-tight" id="daily">
+  <div class="container">
+    <div class="kicker-row reveal">
+      <div>
+        <p class="eyebrow">Today's Quote</p>
+        <h2 class="split-target">Wisdom for <span class="gold">right now</span></h2>
+      </div>
+      <button class="btn btn-outline" type="button" id="ql-random">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg>
+        Surprise me
+      </button>
+    </div>
+
+    <figure class="card ql-stage reveal" id="ql-stage" aria-live="polite">
+      <div class="ql-quote-mark" aria-hidden="true">“</div>
+      <blockquote class="ql-text" id="ql-text">Loading today's wisdom…</blockquote>
+      <figcaption class="ql-meta">
+        <span class="chip" id="ql-cat">…</span>
+        <span class="muted" id="ql-count"></span>
+      </figcaption>
+      <div class="ql-actions" role="toolbar" aria-label="Quote actions">
+        <button class="btn btn-outline btn-sm" type="button" id="ql-copy" title="Copy quote">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copy</button>
+        <button class="btn btn-outline btn-sm" type="button" id="ql-share" title="Share quote">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+          Share</button>
+        <button class="btn btn-outline btn-sm" type="button" id="ql-fav" title="Save to favorites">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 17 2.5 13.5 2.5 9.2 2.5 6.4 4.7 4.5 7.2 4.5c1.9 0 3.6 1 4.8 2.8 1.2-1.8 2.9-2.8 4.8-2.8 2.5 0 4.7 1.9 4.7 4.7 0 4.3-4.5 7.8-9.5 11.8z"/></svg>
+          Save</button>
+        <button class="btn btn-gold btn-sm" type="button" id="ql-image" title="Download as image">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Image</button>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- BROWSE -->
+<section id="browse" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="center reveal">
+      <p class="eyebrow" style="justify-content:center">The Vault</p>
+      <h2>Browse all <span class="blue">10,000 quotes</span></h2>
+      <p class="lead">Twenty categories, five hundred quotes each — perfectly balanced. Search everything, or wander a category.</p>
+    </div>
+
+    <div class="ql-toolbar reveal">
+      <div class="ql-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" id="ql-search" placeholder="Search all 10,000 quotes… (e.g. courage, money, morning)" aria-label="Search quotes">
+      </div>
+      <button class="btn btn-outline btn-sm" type="button" id="ql-favs-view">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 17 2.5 13.5 2.5 9.2 2.5 6.4 4.7 4.5 7.2 4.5c1.9 0 3.6 1 4.8 2.8 1.2-1.8 2.9-2.8 4.8-2.8 2.5 0 4.7 1.9 4.7 4.7 0 4.3-4.5 7.8-9.5 11.8z"/></svg>
+        My favorites <span id="ql-fav-count" class="ql-badge">0</span>
+      </button>
+    </div>
+
+    <div class="ql-cats reveal" id="ql-cats" role="tablist" aria-label="Quote categories"><!-- pills injected --></div>
+
+    <div class="ql-results" id="ql-results"><!-- quote cards injected --></div>
+    <div class="center" style="margin-top:2rem">
+      <button class="btn btn-outline" type="button" id="ql-more" hidden>Load more quotes</button>
+    </div>
+  </div>
+</section>
+
+<!-- DONATION -->
+<section id="donate">
+  <div class="container">
+    <div class="cta-band reveal">
+      <img class="hero-mark-watermark" src="assets/img/logo-mark.svg" alt="" aria-hidden="true">
+      <p class="eyebrow" style="justify-content:center">No paywall. No subscription. Ever.</p>
+      <h2 class="split-target">Loved a quote? <span class="gold">Leave a dollar.</span></h2>
+      <p class="lead" style="margin-bottom:2rem">Quoti Live stays free for everyone. If it gave you a lift today, a one-time donation — $1 or any amount you choose — keeps the lights on. That's the whole business model.</p>
+      <div class="ql-donate" role="group" aria-label="Donation amounts">
+        <button class="btn btn-outline ql-amt" type="button" data-amount="1" aria-pressed="true">$1</button>
+        <button class="btn btn-outline ql-amt" type="button" data-amount="3">$3</button>
+        <button class="btn btn-outline ql-amt" type="button" data-amount="5">$5</button>
+        <span class="ql-custom">
+          <span aria-hidden="true">$</span>
+          <input type="number" id="ql-custom-amt" min="1" step="1" placeholder="Custom" aria-label="Custom donation amount in dollars">
+        </span>
+        <button class="btn btn-gold btn-lg" type="button" id="ql-donate-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 17 2.5 13.5 2.5 9.2 2.5 6.4 4.7 4.5 7.2 4.5c1.9 0 3.6 1 4.8 2.8 1.2-1.8 2.9-2.8 4.8-2.8 2.5 0 4.7 1.9 4.7 4.7 0 4.3-4.5 7.8-9.5 11.8z"/></svg>
+          Donate <span id="ql-donate-amt">$1</span></button>
+      </div>
+      <p class="muted" style="font-size:.85rem;margin-top:1.2rem">100% optional. Everything above works whether you donate or not.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-tight" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="center reveal">
+      <p class="eyebrow" style="justify-content:center">Quoti Live FAQ</p>
+      <h2>Fair questions</h2>
+    </div>
+    <div class="faq reveal" style="margin-top:2.4rem">
+      <details>
+        <summary>Is Quoti Live really free? What's the catch?</summary>
+        <div class="faq-body"><p>Really free — all 10,000 quotes, search, favorites, sharing and image downloads. No account, no trial, no locked tier. If it helps you, an optional $1 (or custom) donation keeps it running. That's the entire model.</p></div>
+      </details>
+      <details>
+        <summary>Where do the quotes come from?</summary>
+        <div class="faq-body"><p>Every quote is an original aphorism written for the Quoti Live collection — no recycled internet lists, no misattributed "Einstein" quotes. Twenty categories, exactly 500 quotes each.</p></div>
+      </details>
+      <details>
+        <summary>Can I use the quotes in my content?</summary>
+        <div class="faq-body"><p>Yes — share them, post them, print them. A credit to Quoti Live is appreciated but not required. The download button even makes you a ready-to-post image card.</p></div>
+      </details>
+      <details>
+        <summary>Where are my favorites stored?</summary>
+        <div class="faq-body"><p>Privately, in your own browser (localStorage). Nothing is sent to a server, which is also why no account is needed.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/quotes-app.js" defer></script>
