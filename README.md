@@ -11,6 +11,7 @@ Premium marketing site for **Quoti Consulting** (Shonya Williams — Business St
 - **10 pages** — Home, About, Services, Industries, Quoti AOS, Resources, Blog, Podcast, Client Portal, Contact
 - **Light & dark modes** — dark-luxe gold default, ivory light theme; toggle in the header, persisted in `localStorage`, respects `prefers-color-scheme`
 - **Conversion-funnel design** — $99 Business Overview Audit™ tripwire, Ascend Growth Program™ flagship, lead-capture forms, CTA bands on every page
+- **Modern motion layer** — scroll parallax (logo watermarks & orbs), word-by-word blur-reveal headings, cursor spotlight on cards, 3D tilt on pricing/quote cards, magnetic gold buttons, scroll progress bar, smart hide-on-scroll header, CSS scroll-driven animations (`animation-timeline: view()`), marquee pause-on-hover — all dependency-free and `prefers-reduced-motion` safe
 - **Rebuilt vector logo** — clean transparent SVG mark (`assets/img/logo-mark.svg`) + SVG/PNG favicons + social OG image
 - **SEO / AIO / GEO / LLM ready** — per-page meta + canonical + Open Graph + Twitter cards, JSON-LD (`ProfessionalService`, `OfferCatalog` with all 10 priced services, `FAQPage`, `Person`, `PodcastSeries`, `Blog`, breadcrumbs), `sitemap.xml`, `robots.txt` with AI-crawler rules, and `llms.txt`
 - **Self-hosted fonts** (Fraunces, Plus Jakarta Sans, JetBrains Mono) — no third-party requests, fast and private

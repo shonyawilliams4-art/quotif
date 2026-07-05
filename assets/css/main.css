@@ -697,6 +697,84 @@ textarea { min-height: 130px; resize: vertical; }
 .footer-watermark { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; }
 .footer-watermark strong { color: var(--accent); font-weight: 600; }
 
+/* ---------- Motion layer (parallax · spotlight · tilt · reveals) ---------- */
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 3px;
+  z-index: 200;
+  background: var(--grad-gold);
+  transform-origin: left;
+  transform: scaleX(0);
+  pointer-events: none;
+  box-shadow: 0 0 12px var(--glow);
+}
+
+/* Smart header: hides on scroll down, returns on scroll up */
+.site-header { transition: border-color .4s, background .4s, transform .45s var(--ease-lux); }
+.site-header.hide { transform: translateY(-100%); }
+
+/* Cursor spotlight on cards */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .45s;
+  background: radial-gradient(340px circle at var(--mx, 50%) var(--my, 50%),
+    color-mix(in srgb, var(--accent) 13%, transparent), transparent 62%);
+  pointer-events: none;
+}
+.card:hover::after { opacity: 1; }
+
+/* Word-by-word heading reveal (spans injected by JS) */
+.split-heading { text-wrap: wrap; }
+.split-heading .w {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(.55em);
+  filter: blur(7px);
+  transition:
+    opacity .55s var(--ease-lux),
+    transform .65s var(--ease-lux),
+    filter .55s var(--ease-lux);
+  transition-delay: calc(var(--wi, 0) * 65ms);
+  will-change: opacity, transform, filter;
+}
+.split-heading.in .w { opacity: 1; transform: none; filter: none; }
+
+/* Magnetic buttons use the composable `translate` property */
+.btn { transition: transform .3s var(--ease-lux), box-shadow .3s var(--ease-lux), background .3s, border-color .3s, color .3s, translate .3s var(--ease-lux); }
+
+/* Marquee: pause on hover */
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+/* Scroll-driven animations (progressive enhancement) */
+@supports (animation-timeline: view()) {
+  .cta-band {
+    animation: ctaView linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 42%;
+  }
+  @keyframes ctaView {
+    from { opacity: .45; transform: scale(.955) translateY(28px); }
+    to { opacity: 1; transform: none; }
+  }
+  .cta-band.reveal { transition: none; }
+
+  .stats-band .stat {
+    animation: statRise linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 90%;
+  }
+  @keyframes statRise {
+    from { opacity: .2; transform: translateY(30px); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
 /* ---------- Reveal animations ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s var(--ease-lux), transform .8s var(--ease-lux); }
 .reveal.in { opacity: 1; transform: none; }
@@ -735,6 +813,9 @@ textarea { min-height: 130px; resize: vertical; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .15s !important; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }
+  .split-heading .w { opacity: 1; transform: none; filter: none; }
+  .card::after { display: none; }
+  .scroll-progress { display: none; }
 }
 
 /* ---------- Misc ---------- */
