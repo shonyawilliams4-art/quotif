@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================================================
+       Quoti Consulting — {{TITLE}}
+       Created By: iTechSmart Inc.
+       ================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESC}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="author" content="Quoti Consulting — Shonya Williams">
+  <meta name="generator" content="Created By: iTechSmart Inc.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="{{URL}}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Quoti Consulting">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESC}}">
+  <meta property="og:url" content="{{URL}}">
+  <meta property="og:image" content="{{BASE}}/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{DESC}}">
+  <meta name="twitter:image" content="{{BASE}}/assets/img/og-image.png">
+
+  <meta name="theme-color" content="#0B0906" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FBF7EE" media="(prefers-color-scheme: light)">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Prevent theme flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem("quoti-theme") ||
+        (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container-wide header-inner">
+      <a class="brand" href="index.html" aria-label="Quoti Consulting — Home">
+        <img src="assets/img/logo-mark.svg" alt="Quoti Consulting logo — a golden roof over quotation marks with roots" width="46" height="46">
+        <span class="brand-name">QUOTI<small>Consulting</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html"{{ACTIVE_HOME}}>Home</a>
+        <a href="about.html"{{ACTIVE_ABOUT}}>About</a>
+        <a href="services.html"{{ACTIVE_SERVICES}}>Services</a>
+        <a href="industries.html"{{ACTIVE_INDUSTRIES}}>Industries</a>
+        <a href="quoti-aos.html"{{ACTIVE_AOS}}>Quoti AOS</a>
+        <a href="resources.html"{{ACTIVE_RESOURCES}}>Resources</a>
+        <a href="blog.html"{{ACTIVE_BLOG}}>Blog</a>
+        <a href="podcast.html"{{ACTIVE_PODCAST}}>Podcast</a>
+        <a href="client-portal.html"{{ACTIVE_PORTAL}}>Client Portal</a>
+        <a href="contact.html"{{ACTIVE_CONTACT}}>Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark mode">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <a class="btn btn-gold btn-sm header-cta" href="contact.html">Book Consultation</a>
+        <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+{{CONTENT}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:1.1rem">
+          <img src="assets/img/logo-mark.svg" alt="" width="46" height="46" aria-hidden="true">
+          <span class="brand-name">QUOTI<small>Consulting</small></span>
+        </a>
+        <p class="footer-tagline">“Rooted in strong business foundations. Rising through strategic growth.”</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Shonya</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="quoti-aos.html">Quoti AOS</a></li>
+          <li><a href="blog.html">The Quoti Growth Journal</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Work With Us</h4>
+        <ul>
+          <li><a href="services.html#audit">$99 Business Overview Audit™</a></li>
+          <li><a href="services.html">All Services &amp; Pricing</a></li>
+          <li><a href="services.html#ascend">Ascend Growth Program™</a></li>
+          <li><a href="resources.html">Free Resources</a></li>
+          <li><a href="client-portal.html">Client Portal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@quoticonsulting.com">hello@quoticonsulting.com</a></li>
+          <li><a href="contact.html">Book a consultation</a></li>
+          <li><a href="contact.html">Ask a question</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Quoti Consulting. All rights reserved. Business Overview Audit™, Business Health Assessment™, Business Foundation Audit™ and Ascend Growth Program™ are trademarks of Quoti Consulting.</span>
+      <span class="footer-watermark">Created By: <strong>iTechSmart Inc.</strong></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

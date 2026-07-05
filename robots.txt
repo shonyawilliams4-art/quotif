@@ -1,0 +1,17 @@
+# Quoti Consulting — robots.txt
+# Created By: iTechSmart Inc.
+User-agent: *
+Allow: /
+Disallow: /_build/
+
+# AI / LLM crawlers welcome — see /llms.txt for a structured site guide
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://quoticonsulting.com/sitemap.xml

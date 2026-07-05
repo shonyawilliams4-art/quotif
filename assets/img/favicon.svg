@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Quoti Consulting mark">
+  <!-- Created By: iTechSmart Inc. -->
+  <defs>
+    <linearGradient id="qGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F9E9A0"/>
+      <stop offset="0.45" stop-color="#E3B94C"/>
+      <stop offset="1" stop-color="#B07E1F"/>
+    </linearGradient>
+    <linearGradient id="qGoldRoof" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6DF8B"/>
+      <stop offset="1" stop-color="#C08F28"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Roof -->
+  <path d="M256 44 L448 190 L418 214 L256 90 L94 214 L64 190 Z" fill="url(#qGoldRoof)"/>
+
+  <!-- Closing quotation marks -->
+  <g fill="url(#qGold)">
+    <path d="M208 148
+             c-32 0 -56 24 -56 55
+             c0 31 24 55 54 55
+             c1 0 3 0 4 -1
+             c-4 28 -21 48 -49 58
+             l9 24
+             c48 -15 82 -56 82 -117
+             c0 -44 -18 -74 -44 -74 z"/>
+    <path d="M330 148
+             c-32 0 -56 24 -56 55
+             c0 31 24 55 54 55
+             c1 0 3 0 4 -1
+             c-4 28 -21 48 -49 58
+             l9 24
+             c48 -15 82 -56 82 -117
+             c0 -44 -18 -74 -44 -74 z"/>
+  </g>
+
+  <!-- Roots -->
+  <g fill="none" stroke="url(#qGold)" stroke-linecap="round">
+    <path d="M256 356 V468" stroke-width="16"/>
+    <path d="M256 372 C222 380 194 402 178 438" stroke-width="12"/>
+    <path d="M256 372 C290 380 318 402 334 438" stroke-width="12"/>
+    <path d="M256 396 C230 408 214 428 206 456" stroke-width="9"/>
+    <path d="M256 396 C282 408 298 428 306 456" stroke-width="9"/>
+    <path d="M232 384 C204 386 176 398 152 420" stroke-width="8"/>
+    <path d="M280 384 C308 386 336 398 360 420" stroke-width="8"/>
+    <path d="M256 424 C240 436 232 450 228 466" stroke-width="7"/>
+    <path d="M256 424 C272 436 280 450 284 466" stroke-width="7"/>
+  </g>
+  <!-- Ground flourish -->
+  <path d="M148 352 C184 340 220 336 256 336 C292 336 328 340 364 352"
+        fill="none" stroke="url(#qGold)" stroke-width="12" stroke-linecap="round"/>
+</svg>

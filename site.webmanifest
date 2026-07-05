@@ -1,0 +1,13 @@
+{
+  "name": "Quoti Consulting",
+  "short_name": "Quoti",
+  "description": "Rooted in strong business foundations. Rising through strategic growth. Created By: iTechSmart Inc.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0906",
+  "theme_color": "#DDB44A",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
