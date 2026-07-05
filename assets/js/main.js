@@ -6,8 +6,8 @@
   /* ---------- Theme (light / dark) ---------- */
   const root = document.documentElement;
   const stored = localStorage.getItem("quoti-theme");
-  const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-  const initial = stored || (prefersLight ? "light" : "dark");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const initial = stored || (prefersDark ? "dark" : "light");
   root.setAttribute("data-theme", initial);
 
   function bindThemeToggle() {
@@ -212,9 +212,9 @@
           words(node.textContent, "");
         } else if (node.nodeName === "BR") {
           frag.appendChild(node.cloneNode());
-        } else if (node.classList && (node.classList.contains("gold") || node.classList.contains("blue"))) {
+        } else if (node.classList && ["gold", "blue", "royal", "purple"].some(function (c) { return node.classList.contains(c); })) {
           // flatten gradient phrases into per-word gradient spans so text wraps naturally
-          words(node.textContent, node.classList.contains("blue") ? "blue" : "gold");
+          words(node.textContent, ["gold", "blue", "royal", "purple"].filter(function (c) { return node.classList.contains(c); })[0]);
         } else {
           const el = node.cloneNode(true);
           el.classList.add("w");

@@ -32,8 +32,8 @@
   <meta name="twitter:description" content="{{DESC}}">
   <meta name="twitter:image" content="{{BASE}}/assets/img/og-image.png">
 
-  <meta name="theme-color" content="#0B0906" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#FBF7EE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#071223" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#0A1A33" media="(prefers-color-scheme: light)">
 
   <!-- Icons -->
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -45,7 +45,7 @@
   <script>
     (function () {
       var t = localStorage.getItem("quoti-theme") ||
-        (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
       document.documentElement.setAttribute("data-theme", t);
     })();
   </script>
@@ -55,7 +55,7 @@
   <!-- Structured data -->
   <script type="application/ld+json">{{JSONLD}}</script>
 </head>
-<body>
+<body class="{{BODY_CLASS}}">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
@@ -102,6 +102,7 @@
           <span class="brand-name">QUOTI<small>Consulting</small></span>
         </a>
         <p class="footer-tagline">“Rooted in strong business foundations. Rising through strategic growth.”</p>
+        <p class="footer-creds">Former IRS Revenue Agent&ensp;•&ensp;Veteran-Owned&ensp;•&ensp;Accountant-Led&ensp;•&ensp;Business Strategy</p>
       </div>
       <div>
         <h4>Company</h4>

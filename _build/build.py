@@ -154,6 +154,7 @@ PAGES = {
         }, breadcrumbs(("Home", "index.html"), ("Quoti AOS", "quoti-aos.html"))],
     },
     "quoti-live.html": {
+        "body_class": "accent-purple",
         "title": "Quoti Live — 10,000 Free Inspirational Quotes, No Subscription | Quoti Consulting",
         "desc": "Quoti Live: 10,000 original quotes across 20 balanced categories — motivation, success, business, love, discipline and more. Quote of the day, search, favorites, shareable image cards. Free forever; optional $1 or custom donation.",
         "keywords": "free quotes, quote of the day, inspirational quotes free, motivational quotes no subscription, business quotes, daily wisdom, quote generator, Quoti Live, donation supported quotes",
@@ -187,6 +188,7 @@ PAGES = {
         "jsonld": [ORG, breadcrumbs(("Home", "index.html"), ("Resources", "resources.html"))],
     },
     "blog.html": {
+        "body_class": "accent-purple",
         "title": "The Quoti Growth Journal — Business Strategy, Finance & Compliance Blog | Quoti Consulting",
         "desc": "Weekly articles on business strategy, accounting, finance, compliance, leadership, business credit, funding, operations and entrepreneurship — from the team behind the $99 Business Overview Audit™.",
         "keywords": "small business blog, business strategy articles, accounting tips blog, business credit articles, funding advice, compliance blog, Quoti Growth Journal",
@@ -200,6 +202,7 @@ PAGES = {
         }, breadcrumbs(("Home", "index.html"), ("Blog", "blog.html"))],
     },
     "podcast.html": {
+        "body_class": "accent-purple",
         "title": "Building Better Businesses with Shonya Williams — Podcast | Quoti Consulting",
         "desc": "Weekly podcast conversations on business foundations, financial leadership, IRS insights, business systems, funding, SOPs, leadership and entrepreneur success stories, hosted by Shonya Williams.",
         "keywords": "business podcast, Shonya Williams podcast, Building Better Businesses podcast, IRS insights podcast, small business finance podcast, entrepreneur success stories",
@@ -249,6 +252,7 @@ def build():
                 .replace("{{URL}}", url)
                 .replace("{{BASE}}", BASE)
                 .replace("{{JSONLD}}", jsonld)
+                .replace("{{BODY_CLASS}}", meta.get("body_class", ""))
                 .replace("{{CONTENT}}", body))
         for key in NAV_KEYS:
             html = html.replace("{{ACTIVE_%s}}" % key,

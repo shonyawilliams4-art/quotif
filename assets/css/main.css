@@ -23,78 +23,93 @@
   --grad-gold: linear-gradient(120deg, #F3DD8C 0%, #DDB44A 38%, #A8791A 100%);
   --grad-gold-soft: linear-gradient(120deg, rgba(243,221,140,.16), rgba(168,121,26,.16));
 
-  --blue-100: #D6E6F7;
-  --blue-300: #8FB8E8;
-  --blue-500: #3E6FB0;
-  --blue-700: #1E3A5F;
-  --blue-900: #12233C;
-  --grad-blue: linear-gradient(120deg, #8FB8E8 0%, #3E6FB0 55%, #1E3A5F 100%);
-  --grad-blue-soft: linear-gradient(120deg, rgba(143,184,232,.16), rgba(62,111,176,.16));
-  --grad-royal: linear-gradient(120deg, #F3DD8C 0%, #DDB44A 32%, #3E6FB0 100%);
+  /* Quoti brand palette: deep navy · royal blue · rich gold · soft purple · white */
+  --navy-950: #060F20;
+  --navy-900: #0A1A33;
+  --navy-800: #0F2448;
+  --navy-700: #16305C;
+  --royal-300: #7FA4EC;
+  --royal-500: #2E5FD0;
+  --royal-600: #2450B4;
+  --royal-700: #1A3F94;
+  --purple-300: #B9A5E8;
+  --purple-500: #7C5FC0;
+  --purple-700: #5F46A3;
+  --lblue-100: #F0F6FD;
+  --lblue-200: #E1EDFA;
+
+  --grad-navy: linear-gradient(180deg, #0A1A33 0%, #0F2448 100%);
+  --grad-blue: linear-gradient(120deg, #2E5FD0 0%, #2450B4 55%, #1A3F94 100%);
+  --grad-blue-soft: linear-gradient(120deg, rgba(46,95,208,.12), rgba(26,63,148,.12));
+  --grad-purple: linear-gradient(120deg, #9B7FD9 0%, #7C5FC0 55%, #5F46A3 100%);
+  --grad-purple-soft: linear-gradient(120deg, rgba(155,127,217,.14), rgba(95,70,163,.14));
+  --grad-cta: linear-gradient(120deg, #1A3F94 0%, #2E5FD0 45%, #7C5FC0 100%);
+  --grad-royal: linear-gradient(120deg, #F3DD8C 0%, #DDB44A 32%, #2E5FD0 100%);
 
   --ease-lux: cubic-bezier(.22,.9,.28,1);
   --radius: 18px;
   --radius-lg: 26px;
 }
 
-/* Dark (default) */
+/* Light (default) — the Quoti brand theme: white · navy · royal · gold · purple */
 :root,
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #0B0906;
-  --bg-2: #120E08;
-  --bg-3: #191309;
-  --surface: rgba(255, 248, 230, 0.045);
-  --surface-2: rgba(255, 248, 230, 0.08);
-  --surface-solid: #171207;
-  --border: rgba(233, 201, 99, 0.16);
-  --border-strong: rgba(233, 201, 99, 0.38);
-  --text: #F6F1E4;
-  --text-soft: #D9CFB8;
-  --muted: #A2977E;
-  --accent: #E9C963;
-  --accent-deep: #DDB44A;
-  --on-accent: #221703;
-  --glow: rgba(221, 180, 74, 0.16);
-  --shadow: 0 24px 60px -22px rgba(0, 0, 0, .72);
-  --shadow-soft: 0 10px 34px -14px rgba(0, 0, 0, .6);
-  --header-bg: rgba(11, 9, 6, 0.72);
-  --hero-veil: radial-gradient(1000px 520px at 78% -10%, rgba(221,180,74,.17), transparent 62%),
-               radial-gradient(820px 460px at 8% 8%, rgba(62,111,176,.14), transparent 60%);
-  --input-bg: rgba(255, 248, 230, 0.05);
-  --blue: #8FB8E8;
-  --blue-deep: #3E6FB0;
-  --glow-blue: rgba(62, 111, 176, 0.22);
-}
-
-/* Light */
 :root[data-theme="light"] {
   color-scheme: light;
-  --bg: #FBF7EE;
-  --bg-2: #F5EEDD;
-  --bg-3: #EFE5CC;
-  --surface: rgba(255, 255, 255, 0.82);
-  --surface-2: rgba(255, 255, 255, 0.95);
+  --bg: #FFFFFF;
+  --bg-2: #F0F6FD;
+  --bg-3: #E1EDFA;
+  --surface: #FFFFFF;
+  --surface-2: #FFFFFF;
   --surface-solid: #FFFFFF;
-  --border: rgba(126, 90, 18, 0.16);
-  --border-strong: rgba(126, 90, 18, 0.42);
-  --text: #221B0E;
-  --text-soft: #4A3F28;
-  --muted: #7A6C4E;
-  --accent: #A8791A;
+  --border: rgba(10, 26, 51, 0.13);
+  --border-strong: rgba(10, 26, 51, 0.3);
+  --text: #0B1F3F;
+  --text-soft: #2E4265;
+  --muted: #5D6E8A;
+  --accent: #A87C1F;
   --accent-deep: #8A6414;
-  --on-accent: #221703;
-  --glow: rgba(201, 152, 47, 0.18);
-  --shadow: 0 24px 55px -24px rgba(110, 82, 20, .35);
-  --shadow-soft: 0 10px 30px -16px rgba(110, 82, 20, .28);
-  --header-bg: rgba(251, 247, 238, 0.8);
-  --hero-veil: radial-gradient(1000px 520px at 78% -10%, rgba(221,180,74,.28), transparent 62%),
-               radial-gradient(820px 460px at 8% 8%, rgba(62,111,176,.16), transparent 60%);
+  --on-accent: #0A1A33;
+  --glow: rgba(201, 152, 47, 0.24);
+  --shadow: 0 24px 55px -24px rgba(10, 26, 51, .25);
+  --shadow-soft: 0 10px 30px -16px rgba(10, 26, 51, .16);
+  --header-bg: rgba(255, 255, 255, 0.85);
   --input-bg: #FFFFFF;
-  --blue: #2C5490;
-  --blue-deep: #1E3A5F;
-  --glow-blue: rgba(44, 84, 144, 0.18);
-  --grad-blue: linear-gradient(120deg, #4A7CBD 0%, #2C5490 55%, #1E3A5F 100%);
+  --blue: #2456C4;
+  --blue-deep: #1A3F94;
+  --glow-blue: rgba(46, 95, 208, 0.2);
+  --purple: #6B4FB3;
+  --glow-purple: rgba(124, 95, 192, 0.2);
+  --navy-band: linear-gradient(180deg, #0A1A33 0%, #10264D 100%);
+}
+
+/* Dark — navy-dark variant */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #071223;
+  --bg-2: #0B1B36;
+  --bg-3: #102448;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-2: rgba(255, 255, 255, 0.08);
+  --surface-solid: #0E2140;
+  --border: rgba(143, 184, 232, 0.16);
+  --border-strong: rgba(143, 184, 232, 0.38);
+  --text: #EFF4FB;
+  --text-soft: #C6D4E8;
+  --muted: #8CA0BE;
+  --accent: #E9C963;
+  --accent-deep: #DDB44A;
+  --on-accent: #0A1A33;
+  --glow: rgba(233, 201, 99, 0.16);
+  --shadow: 0 24px 60px -22px rgba(0, 0, 0, .65);
+  --shadow-soft: 0 10px 34px -14px rgba(0, 0, 0, .5);
+  --header-bg: rgba(7, 18, 35, 0.78);
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --blue: #7FA4EC;
+  --blue-deep: #2E5FD0;
+  --glow-blue: rgba(46, 95, 208, 0.28);
+  --purple: #B9A5E8;
+  --glow-purple: rgba(155, 127, 217, 0.26);
+  --navy-band: linear-gradient(180deg, #0B1D3B 0%, #122A55 100%);
 }
 
 /* ---------- Base ---------- */
@@ -138,17 +153,16 @@ section { position: relative; padding: clamp(4.5rem, 9vw, 7.5rem) 0; }
 
 /* Gradient / accent text */
 .gold {
-  background: var(--grad-gold);
+  background: var(--grad-gold-text, var(--grad-gold));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-:root[data-theme="light"] .gold {
-  background: linear-gradient(120deg, #B8892A 0%, #8A6414 60%, #6E4E0E 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+:root, :root[data-theme="light"] { --grad-gold-text: linear-gradient(120deg, #B8892A 0%, #8A6414 60%, #6E4E0E 100%); }
+:root[data-theme="dark"] { --grad-gold-text: var(--grad-gold); }
+/* On navy bands, gold text must be the bright gradient in both themes */
+.section-navy .gold, .hero .gold, .site-footer .gold, .cta-band .gold { background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; }
 em.serif { font-family: var(--font-display); font-style: italic; }
 
 .eyebrow {
@@ -320,21 +334,45 @@ em.serif { font-family: var(--font-display); font-style: italic; }
   .header-cta { display: none; }
 }
 
+/* ---------- Navy band (hero, footer, AOS, contact — deep navy in BOTH themes) ---------- */
+.section-navy, .hero, .site-footer {
+  --text: #F4F8FE;
+  --text-soft: #C9D6EA;
+  --muted: #93A7C6;
+  --border: rgba(143, 184, 232, 0.18);
+  --border-strong: rgba(143, 184, 232, 0.42);
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-2: rgba(255, 255, 255, 0.1);
+  --surface-solid: #10264D;
+  --input-bg: rgba(255, 255, 255, 0.08);
+  --accent: #E9C963;
+  --glow: rgba(233, 201, 99, 0.18);
+  --blue: #7FA4EC;
+  --purple: #B9A5E8;
+  --shadow-soft: 0 10px 34px -14px rgba(3, 9, 20, .5);
+  --shadow: 0 24px 60px -22px rgba(3, 9, 20, .65);
+  background: var(--navy-band);
+  color: var(--text);
+}
+.section-navy .eyebrow, .hero .eyebrow { color: var(--accent); }
+
 /* ---------- Hero ---------- */
 .hero {
-  min-height: 100svh;
+  min-height: 92svh;
   display: flex;
   align-items: center;
   padding: 9.5rem 0 5.5rem;
   overflow: hidden;
   isolation: isolate;
 }
-.hero-sub { min-height: 64svh; padding-top: 10rem; }
+.hero-sub { min-height: 62svh; padding-top: 10rem; }
 .hero-bg {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: var(--hero-veil), var(--bg);
+  background:
+    radial-gradient(1000px 520px at 78% -10%, rgba(233, 201, 99, .14), transparent 62%),
+    radial-gradient(820px 460px at 8% 8%, rgba(46, 95, 208, .28), transparent 60%);
   transition: background .45s var(--ease-lux);
 }
 .hero-grid-lines {
@@ -391,8 +429,9 @@ em.serif { font-family: var(--font-display); font-style: italic; }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
-@media (max-width: 1020px) { .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 660px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } }
+.grid-5 { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 1020px) { .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); } .grid-5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 660px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } .grid-5 { grid-template-columns: repeat(2, 1fr); } }
 
 .card {
   position: relative;
@@ -482,6 +521,24 @@ em.serif { font-family: var(--font-display); font-style: italic; }
   line-height: 1;
 }
 .stat .stat-label { font-size: .85rem; color: var(--muted); margin-top: .5rem; }
+
+.stats-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .stats-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .stats-3 { grid-template-columns: 1fr 1fr; } }
+
+/* Brand statement band */
+.statement {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 46ch;
+  margin: 0 auto;
+  color: var(--text-soft);
+  text-align: center;
+}
+.statement strong { color: var(--text); font-weight: 600; }
+.statement::before { content: "“"; display: block; font-size: 3.4em; line-height: .4; margin-bottom: .25em; background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
 /* ---------- Checklist ---------- */
 .check-list { list-style: none; padding: 0; margin: 1.4rem 0; display: grid; gap: .8rem; }
@@ -674,7 +731,7 @@ textarea { min-height: 130px; resize: vertical; }
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--border);
-  background: var(--bg-2);
+  background: var(--navy-band);
   padding: 4.2rem 0 2rem;
   margin-top: 2rem;
 }
@@ -698,6 +755,7 @@ textarea { min-height: 130px; resize: vertical; }
 .footer-grid a { color: var(--muted); font-size: .92rem; transition: color .25s; }
 .footer-grid a:hover { color: var(--text); }
 .footer-tagline { color: var(--muted); font-size: .92rem; max-width: 34ch; font-style: italic; font-family: var(--font-display); }
+.footer-creds { font-family: var(--font-mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-top: 1rem; max-width: 38ch; line-height: 1.9; }
 .footer-bottom {
   margin-top: 3rem;
   padding-top: 1.6rem;
@@ -849,65 +907,150 @@ a.footer-watermark:hover strong { color: var(--blue); text-decoration: underline
 }
 .skip-link:focus { left: 0; }
 
-/* ---------- Sapphire accent (client brand blue) ---------- */
-:root { --grad-blue-text: linear-gradient(120deg, #BFDCF9 0%, #8FB8E8 40%, #3E6FB0 100%); }
-:root[data-theme="light"] { --grad-blue-text: linear-gradient(120deg, #4A7CBD 0%, #2C5490 55%, #16294A 100%); }
-.blue {
+/* ---------- Brand accents: royal blue + soft purple ---------- */
+:root, :root[data-theme="light"] {
+  --grad-blue-text: linear-gradient(120deg, #2E5FD0 0%, #2450B4 55%, #16305C 100%);
+  --grad-purple-text: linear-gradient(120deg, #7C5FC0 0%, #6B4FB3 55%, #4B3585 100%);
+}
+:root[data-theme="dark"] {
+  --grad-blue-text: linear-gradient(120deg, #BFD5F9 0%, #7FA4EC 45%, #4A7CE0 100%);
+  --grad-purple-text: linear-gradient(120deg, #DCD0F5 0%, #B9A5E8 45%, #9B7FD9 100%);
+}
+.section-navy, .hero, .site-footer, .cta-band {
+  --grad-blue-text: linear-gradient(120deg, #BFD5F9 0%, #7FA4EC 45%, #4A7CE0 100%);
+  --grad-purple-text: linear-gradient(120deg, #DCD0F5 0%, #B9A5E8 45%, #9B7FD9 100%);
+}
+.blue, .royal {
   background: var(--grad-blue-text);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-
-/* Nav underline + outline buttons pick up the sapphire */
-.main-nav a::after { background: var(--grad-royal); }
-.btn-outline:hover { border-color: var(--blue); background: var(--grad-blue-soft); }
-
-/* Testimonial avatars alternate gold / sapphire */
-.avatar-blue, .grid > .quote-card:nth-child(2) .avatar { background: var(--grad-blue); color: #F4F8FD; }
-.eyebrow::before { background: var(--grad-royal); }
-.orb-amber { background: radial-gradient(circle, rgba(62,111,176,.5), transparent 65%); }
-.scroll-progress { background: var(--grad-royal); }
-.shimmer-line { background: linear-gradient(90deg, transparent, var(--gold-400), var(--blue-500), transparent); background-size: 45% 100%; background-repeat: no-repeat; }
-
-/* Alternating icon tiles: gold, sapphire, gold… */
-.grid > .card:nth-child(3n+2) .icon-tile {
-  background: var(--grad-blue-soft);
-  color: var(--blue);
-  border-color: color-mix(in srgb, var(--blue) 32%, transparent);
+.purple {
+  background: var(--grad-purple-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
-/* Stats: alternate gold / sapphire numerals */
-.stats-band .stat:nth-child(even) .gold { background: var(--grad-blue-text); -webkit-background-clip: text; background-clip: text; }
+/* Eyebrows: royal on white, gold on navy (set above) */
+.eyebrow { color: var(--blue); }
+.eyebrow::before { background: var(--grad-royal); }
 
-/* Marquee separators alternate */
+/* Nav: royal hover underline, gold active */
+.main-nav a::after { background: var(--grad-blue); }
+.main-nav a[aria-current="page"] { color: var(--accent); }
+.main-nav a[aria-current="page"]::after { background: var(--grad-gold); }
+
+/* Outline buttons: royal border/text, gold on hover */
+.btn-outline { border-color: color-mix(in srgb, var(--blue) 45%, transparent); color: var(--text); }
+.btn-outline:hover { border-color: var(--accent); background: var(--grad-gold-soft); }
+
+/* Service icons royal; card hover = light blue tint + gold border */
+.icon-tile { background: var(--grad-blue-soft); color: var(--blue); }
+.card:hover { border-color: var(--accent); background: linear-gradient(180deg, var(--bg-2), var(--surface)); }
+.section-navy .card:hover, .hero .card:hover { background: var(--surface-2); }
+
+/* Testimonials: navy border, gold marks */
+.quote-card { border-color: color-mix(in srgb, var(--text) 30%, transparent); }
+.avatar-blue, .grid > .quote-card:nth-child(2) .avatar { background: var(--grad-blue); color: #F4F8FD; }
+.avatar-purple { background: var(--grad-purple); color: #F7F4FD; }
+
+/* Process timeline: navy line + gold numbered circles */
+.steps { position: relative; }
+.steps::before {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: color-mix(in srgb, var(--text) 22%, transparent);
+}
+.step::before {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--grad-gold);
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: #0A1A33;
+  color: #0A1A33;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px -6px var(--glow);
+}
+
+/* CTA banners: blue-to-purple gradient with white text */
+.cta-band {
+  --text: #F5F8FE;
+  --text-soft: #DCE6F8;
+  --muted: #B9C8E6;
+  --accent: #F3DD8C;
+  --border: rgba(255,255,255,.2);
+  --border-strong: rgba(255,255,255,.4);
+  --surface: rgba(255,255,255,.08);
+  --input-bg: rgba(255,255,255,.1);
+  background: radial-gradient(700px 320px at 85% -10%, rgba(233,201,99,.2), transparent 60%), var(--grad-cta);
+  border-color: rgba(255,255,255,.22);
+  color: var(--text);
+}
+.cta-band .eyebrow { color: var(--accent); }
+
+/* Purple-accent pages (Blog · Podcast · Quoti Live) */
+.accent-purple .eyebrow { color: var(--purple); }
+.accent-purple .eyebrow::before { background: var(--grad-purple); }
+.accent-purple .icon-tile { background: var(--grad-purple-soft); color: var(--purple); }
+.accent-purple .hero-bg {
+  background:
+    radial-gradient(1000px 520px at 78% -10%, rgba(233, 201, 99, .12), transparent 62%),
+    radial-gradient(820px 460px at 8% 8%, rgba(124, 95, 192, .34), transparent 60%);
+}
+.accent-purple .chip svg { color: var(--purple); }
+.accent-purple .ql-pill.active { background: var(--grad-purple); color: #F7F4FD; }
+.accent-purple .ql-badge { color: var(--purple); background: var(--grad-purple-soft); }
+.accent-purple .ql-quote-mark { background: var(--grad-purple-text); -webkit-background-clip: text; background-clip: text; }
+.accent-purple .marquee-track span::after { color: var(--purple); }
+.section-purple-tint { background: var(--grad-purple-soft); }
+
+/* Statistics / key numbers: rich gold */
+.stat .stat-num { text-shadow: none; }
+.orb-amber { background: radial-gradient(circle, rgba(46,95,208,.45), transparent 65%); }
+.scroll-progress { background: var(--grad-royal); }
+.shimmer-line { background: linear-gradient(90deg, transparent, var(--gold-400), var(--royal-500), transparent); background-size: 45% 100%; background-repeat: no-repeat; }
+
+/* Why-Quoti style tiles: gold icon, navy text */
+.icon-gold.icon-tile { background: var(--grad-gold-soft); color: var(--accent); border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+.section-navy .icon-tile { background: rgba(185,165,232,.14); color: var(--purple); border-color: rgba(185,165,232,.3); }
+
+/* Marquee separators + hero chips alternate royal */
 .marquee-track span:nth-child(even)::after { color: var(--blue); }
-
-/* Hero chips: alternate icon color */
 .hero-badges .chip:nth-child(even) svg { color: var(--blue); }
 
-/* Focus states go sapphire */
-input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 4px var(--glow-blue); }
-
-/* CTA bands: gold glow meets sapphire glow */
-.cta-band {
-  background:
-    radial-gradient(640px 300px at 85% 0%, var(--glow), transparent 65%),
-    radial-gradient(560px 280px at 8% 100%, var(--glow-blue), transparent 65%),
-    var(--surface-2);
-}
+/* Forms: gold focus outlines (navy labels come from --text-soft) */
+input:focus, select:focus, textarea:focus { border-color: var(--gold-400); box-shadow: 0 0 0 4px var(--glow); }
+.ql-search:focus-within, .ql-custom:focus-within { border-color: var(--gold-400); box-shadow: 0 0 0 4px var(--glow); }
 
 /* Footer link hover */
 .footer-grid a:hover { color: var(--blue); }
 
-/* Sapphire button utility */
+/* Royal button */
 .btn-blue {
   background: var(--grad-blue);
   color: #F4F8FD;
   box-shadow: 0 10px 30px -10px var(--glow-blue), inset 0 1px 0 rgba(255,255,255,.25);
 }
 .btn-blue:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -12px var(--glow-blue); }
+.btn-purple {
+  background: var(--grad-purple);
+  color: #F7F4FD;
+  box-shadow: 0 10px 30px -10px var(--glow-purple), inset 0 1px 0 rgba(255,255,255,.25);
+}
+.btn-purple:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -12px var(--glow-purple); }
 
 /* ---------- Quoti Live (free quote platform) ---------- */
 .ql-stage {
@@ -954,7 +1097,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   padding: .35rem .6rem .35rem 1.1rem;
   transition: border-color .3s, box-shadow .3s;
 }
-.ql-search:focus-within { border-color: var(--blue); box-shadow: 0 0 0 4px var(--glow-blue); }
+.ql-search:focus-within { border-color: var(--gold-400); box-shadow: 0 0 0 4px var(--glow); }
 .ql-search svg { width: 18px; height: 18px; color: var(--muted); flex: none; }
 .ql-search input { border: 0; background: transparent; padding: .6rem 0; box-shadow: none !important; }
 .ql-search input:focus { outline: none; border: 0; }
@@ -1042,7 +1185,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); box-shado
   appearance: textfield;
 }
 .ql-custom input::-webkit-outer-spin-button, .ql-custom input::-webkit-inner-spin-button { -webkit-appearance: none; }
-.ql-custom:focus-within { border-color: var(--blue); box-shadow: 0 0 0 4px var(--glow-blue); }
+.ql-custom:focus-within { border-color: var(--gold-400); box-shadow: 0 0 0 4px var(--glow); }
 .ql-custom input:focus { outline: none; }
 
 .ql-toast {
