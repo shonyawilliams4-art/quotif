@@ -14,4 +14,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://quoticonsulting.com/sitemap.xml
+Sitemap: https://quoti.live/sitemap.xml

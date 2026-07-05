@@ -1,0 +1,3 @@
+# Build sources — not needed in the deployed static site
+_build
+README.md

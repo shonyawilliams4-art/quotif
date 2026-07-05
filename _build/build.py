@@ -10,7 +10,7 @@ import json
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BASE = "https://quoticonsulting.com"
+BASE = "https://quoti.live"
 
 ORG = {
     "@type": "ProfessionalService",
