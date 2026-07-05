@@ -4,7 +4,7 @@
 
 Premium marketing site for **Quoti Consulting** (Shonya Williams — Business Strategist, Former IRS Revenue Agent, Accountant, Veteran).
 
-**Created By: iTechSmart Inc.**
+**Created By: [iTechSmart Inc.](https://itechsmart.dev)**
 
 ## Highlights
 
@@ -39,10 +39,10 @@ Edit content in `_build/pages/`, page titles/descriptions/structured data in `_b
 python3 _build/build.py
 ```
 
-Set your production domain in `_build/build.py` (`BASE`), `sitemap.xml`, `robots.txt` and `llms.txt` before launch (currently `https://quoticonsulting.com`).
+The production domain is set to `https://quoti.live` in `_build/build.py` (`BASE`), `sitemap.xml`, `robots.txt` and `llms.txt` — change it there if the site ever moves.
 
 The contact/lead forms are front-end ready (`data-quoti-form`); wire them to your form backend (Formspree, Netlify Forms, HubSpot, etc.) by adding an `action`/fetch handler in `assets/js/main.js`.
 
 ---
 
-© Quoti Consulting. Site design & build — **Created By: iTechSmart Inc.**
+© Quoti Consulting. Site design & build — **Created By: [iTechSmart Inc.](https://itechsmart.dev)**

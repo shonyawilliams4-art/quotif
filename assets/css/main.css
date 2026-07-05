@@ -710,8 +710,10 @@ textarea { min-height: 130px; resize: vertical; }
   font-size: .8rem;
   color: var(--muted);
 }
-.footer-watermark { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; }
-.footer-watermark strong { color: var(--accent); font-weight: 600; }
+.footer-watermark { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; color: var(--muted); transition: color .25s; }
+.footer-watermark strong { color: var(--accent); font-weight: 600; transition: color .25s; }
+a.footer-watermark:hover { color: var(--text); }
+a.footer-watermark:hover strong { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- Motion layer (parallax · spotlight · tilt · reveals) ---------- */
 
