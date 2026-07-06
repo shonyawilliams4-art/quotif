@@ -16,8 +16,8 @@ Site created by iTechSmart Inc. (https://itechsmart.dev)
 - [Industries](https://quoti.live/industries.html): Professional services, law firms, real estate, healthcare, construction, restaurants, nonprofits, government contractors, retail, service businesses.
 - [Quoti Live](https://quoti.live/quoti-live.html): Free quote platform — 10,000 original quotes balanced across 20 categories (500 each): motivation, success, wisdom, leadership, business, money & wealth, discipline, courage, resilience, personal growth, happiness, love, friendship, family, health, mindfulness, creativity, time, change, gratitude. Quote of the day, random quote, full search, favorites, downloadable quote image cards. Free forever, no subscription; optional $1 or custom donation.
 - [Resources](https://quoti.live/resources.html): Free Business Startup Checklist, Business Health Assessment, Funding Readiness Checklist, Business Credit Guide, SOP Starter Guide, Tax Checklist, Monthly Business Review.
-- [Blog](https://quoti.live/blog.html): The Quoti Growth Journal — weekly articles on strategy, accounting, finance, compliance, leadership, business credit, funding, operations, entrepreneurship.
-- [Podcast](https://quoti.live/podcast.html): "Building Better Businesses with Shonya Williams" — weekly.
+- [Blog](https://quoti.live/blog.html): The Quoti Journal — insights, strategies, and practical tools to help businesses build strong foundations, improve operations, and achieve sustainable growth.
+- [Podcast](https://quoti.live/podcast.html): "The Quoti Advantage Podcast" — Smart Strategies. Strong Foundations. Sustainable Growth. Weekly.
 - [Client Portal](https://quoti.live/client-portal.html): Secure uploads, intake forms, messaging, reports, invoices, scheduling, task tracking.
 - [Contact](https://quoti.live/contact.html): Consultation booking; replies within one business day; virtual, nationwide.
 
