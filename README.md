@@ -4,7 +4,7 @@
 
 Premium marketing site for **Quoti Consulting** (Shonya Williams — Business Strategist, Former IRS Revenue Agent, Accountant, Veteran).
 
-**Created By: [iTechSmart Inc.](https://itechsmart.dev)**
+**Created By: [Quoti Consulting (https://Quoticonsulting.com)**
 
 ## Highlights
 
@@ -45,4 +45,4 @@ The contact/lead forms are front-end ready (`data-quoti-form`); wire them to you
 
 ---
 
-© Quoti Consulting. Site design & build — **Created By: [iTechSmart Inc.](https://itechsmart.dev)**
+© Quoti Consulting. Site design & build — **Created By: [Quoti Consulting LLC.](https://Quoticonsulting.com)**
